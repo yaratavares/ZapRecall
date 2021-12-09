@@ -1,0 +1,171 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* pagina inicial */
+.pageInit {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoInit {
+  width: 218px;
+  height: 279px;
+}
+
+.practice {
+  margin-top: 260px;
+}
+
+.practice button {
+  width: 345px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+  border: 3px solid #ffef61;
+  border-radius: 12px;
+}
+
+.practice p {
+  margin-right: 7px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* pagina de cards */
+.pageCards {
+  min-height: 100vh;
+}
+
+.logoPage {
+  padding: 26px 0 0 26px;
+}
+
+.box-cards {
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 576px;
+  width: 392px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.card .conterCards {
+  width: 40px;
+
+  font-weight: 400;
+  font-size: 18px;
+  padding: 13px 12px 0 0;
+
+  align-self: flex-end;
+}
+
+.card img {
+  height: 35px;
+  width: 40px;
+}
+
+.card .question {
+  font-weight: 700;
+  font-size: 28px;
+  align-self: center;
+}
+
+.card .turnCard {
+  padding: 0 17px 18px 0;
+}
+
+/* respostas */
+.questionMini {
+  position: absolute;
+  top: 19px;
+  right: 160px;
+
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.card .answer {
+  margin: 0 49px 0 49px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.card .buttonAnswer {
+  padding: 0 41px 19px 41px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .buttonAnswer button {
+  width: 65px;
+  height: 48px;
+
+  font-weight: 400;
+  font-size: 10px;
+
+  background-color: white;
+  border: 3px solid;
+
+  border-radius: 12px;
+}
+
+.card .buttonAnswer .black {
+  border-color: #000000;
+}
+
+.card .buttonAnswer .red {
+  border-color: #f74848;
+}
+
+.card .buttonAnswer .green {
+  border-color: #62db38;
+}
+
+.card .buttonAnswer .yellow {
+  border-color: #ffef61;
+}
+
+/* pagina final */
+.finished .title {
+  display: flex;
+
+  justify-content: center;
+}
+
+.finished .title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-right: 12px;
+}
+
+.finished .text {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+/* classes para desenvolvimento */
+.hidden {
+  display: none;
+}
