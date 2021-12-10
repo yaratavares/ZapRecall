@@ -2,7 +2,7 @@ import { useState } from "react";
 import ConterCards from "./ConterCards";
 import TurnCard from "./TurnCard";
 
-export default function BehindCard({ setCard, conter }) {
+export default function BehindCard({ setCard, conter, myCard }) {
   const buttonsClass = [
     { class: "black", text: "Aprendi agora" },
     { class: "red", text: "Não lembrei" },
@@ -22,16 +22,11 @@ export default function BehindCard({ setCard, conter }) {
   return (
     <div className={`card ${classButton}`}>
       <div className="questionMini">
-        <p>O que é JSX?</p>
+        <p>{myCard.question}</p>
       </div>
       <ConterCards conter={conter} />
       <div className="answer">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
-          ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu
-          nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras
-          tortor at auctor diam.
-        </p>
+        <p>{myCard.answer}</p>
       </div>
       {cardState !== "result" ? (
         <div className="buttonAnswer">

@@ -1,12 +1,13 @@
 import ConterCards from "./ConterCards";
 import TurnCard from "./TurnCard";
 
-export default function FrontCard({ setCard, conter }) {
+export default function FrontCard({ setCard, conter, myCard }) {
+  console.log(myCard);
   return (
     <div className="card">
       <ConterCards conter={conter} />
       <div className="question">
-        <p>O que é JSX?</p>
+        <p>{myCard.question}</p>
       </div>
       <TurnCard setCard={setCard}></TurnCard>
     </div>
