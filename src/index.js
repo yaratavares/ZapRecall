@@ -3,7 +3,8 @@ import { useState } from "react";
 
 import PageInit from "./components/PageInit";
 import PageCards from "./components/PageCards";
-import PageFinished from "./components/PageFinished";
+import "./css/reset.css";
+import "./css/style.css";
 
 function App() {
   const [pagina, setPagina] = useState("init");

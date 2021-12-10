@@ -3,7 +3,7 @@ import { useState } from "react";
 import HeaderPage from "./HeaderPage";
 import FrontCard from "./FrontCard";
 import BehindCard from "./BehindCard";
-import TurnCard from "./TurnCard";
+import PageFinished from "./PageFinished";
 
 export default function PageCards() {
   const objectCards = [
@@ -58,7 +58,9 @@ export default function PageCards() {
     <div className="pageCards">
       <HeaderPage />
       <div className="box-cards">
-        {card === "front" ? (
+        {conter === 8 ? (
+          <PageFinished />
+        ) : card === "front" ? (
           <FrontCard
             setCard={turnCardBehind}
             conter={conter}

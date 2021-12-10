@@ -95,6 +95,7 @@ body {
   font-weight: 700;
   font-size: 28px;
   align-self: center;
+  text-align: center;
 }
 
 .card .turnCard {
@@ -110,7 +111,7 @@ body {
 .questionMini {
   position: absolute;
   top: 19px;
-  right: 160px;
+  left: 49px;
 
   font-weight: 700;
   font-size: 12px;
@@ -178,6 +179,12 @@ body {
 }
 
 /* pagina final */
+.finished {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .finished .title {
   display: flex;
 
