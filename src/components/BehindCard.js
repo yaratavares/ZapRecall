@@ -28,7 +28,7 @@ export default function BehindCard({
   }
 
   return (
-    <div className={`card ${classButton}`}>
+    <div className={`card ${classButton}`} data-identifier="flashcard">
       <div className="questionMini">
         <p>{myCard.question}</p>
       </div>

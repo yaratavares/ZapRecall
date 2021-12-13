@@ -202,6 +202,15 @@ body {
   font-size: 22px;
 }
 
+.finished .practice {
+  display: flex;
+  justify-content: center;
+}
+
+.finished .practice {
+  margin-top: 16px;
+}
+
 /* classes para desenvolvimento */
 .hidden {
   display: none;

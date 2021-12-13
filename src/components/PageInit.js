@@ -1,5 +1,3 @@
-import HeaderPage from "./HeaderPage";
-
 export default function PageInit({ setPagina }) {
   return (
     <div className="pageInit">
@@ -7,7 +5,10 @@ export default function PageInit({ setPagina }) {
         <img src="assets/logo.png" alt="logo" />
       </div>
       <div className="practice">
-        <button onClick={() => displayPractice(setPagina)}>
+        <button
+          onClick={() => displayPractice(setPagina)}
+          data-identifier="start-zap-recall"
+        >
           <p>Praticar React</p>
           <img src="assets/next.png" />
         </button>
