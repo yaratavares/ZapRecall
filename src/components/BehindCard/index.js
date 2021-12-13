@@ -11,6 +11,8 @@ export default function BehindCard({
   myCard,
   boolean,
   setBoolean,
+  textButton,
+  setTextButton,
 }) {
   const buttonsClass = [
     { class: "black", text: "Aprendi agora", boolean: false },
@@ -20,14 +22,13 @@ export default function BehindCard({
   ];
 
   const [classButton, setClassButton] = useState("");
-
   const [cardState, setCardState] = useState(1);
 
-  function borderColor(classButton, booleanButton) {
-    setBoolean(boolean, booleanButton);
-    boolean.push(booleanButton);
+  function borderColor(classButton, booleanButton, stringButton) {
+    setBoolean([...boolean, booleanButton]);
     setClassButton(classButton);
     setCardState("result");
+    setTextButton([...textButton, stringButton]);
   }
 
   return (
@@ -43,7 +44,9 @@ export default function BehindCard({
         <div className="buttonAnswer">
           {buttonsClass.map((button) => (
             <button
-              onClick={() => borderColor(button.class, button.boolean)}
+              onClick={() =>
+                borderColor(button.class, button.boolean, button.text)
+              }
               className={button.class}
             >
               {button.text}

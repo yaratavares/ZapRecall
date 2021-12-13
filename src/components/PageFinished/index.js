@@ -1,10 +1,14 @@
 import "./style.css";
 
-export default function PageFinished({ boolean }) {
-  if (boolean.includes(false)) {
-    return <PageFailure />;
-  } else {
+export default function PageFinished({ boolean, meta, textButton }) {
+  console.log(textButton);
+  console.log(meta);
+  console.log(boolean);
+  const textFilter = textButton.filter((str) => str.includes("Zap!"));
+  if (!boolean.includes(false) && textFilter.length >= meta) {
     return <PageSucess />;
+  } else {
+    return <PageFailure />;
   }
 }
 

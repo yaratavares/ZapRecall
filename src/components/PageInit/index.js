@@ -1,14 +1,18 @@
 import "./style.css";
 
-export default function PageInit({ setPagina }) {
+export default function PageInit({ setPagina, setMeta }) {
   return (
     <div className="pageInit">
       <div className="logoInit">
         <img src="assets/logo.png" alt="logo" />
       </div>
       <div className="practice">
+        <input
+          placeholder="Sua meta de zaps"
+          onChange={(e) => setMeta(e.target.value)}
+        />
         <button
-          onClick={() => displayPractice(setPagina)}
+          onClick={() => setPagina("practice")}
           data-identifier="start-zap-recall"
         >
           <p>Praticar React</p>
@@ -17,8 +21,4 @@ export default function PageInit({ setPagina }) {
       </div>
     </div>
   );
-}
-
-function displayPractice(setPagina) {
-  setPagina("practice");
 }

@@ -7,7 +7,7 @@ import PageFinished from "../PageFinished";
 
 import "./style.css";
 
-export default function PageCards() {
+export default function PageCards({ meta }) {
   const objectCards = [
     {
       question: "O que é JSX?",
@@ -47,6 +47,7 @@ export default function PageCards() {
   const [conter, setConter] = useState(1);
   const [card, setCard] = useState("front");
   const [booleanAnswer, setBooleanAnswer] = useState([]);
+  const [textButton, setTextButton] = useState([]);
 
   function turnCardFront() {
     setConter(conter + 1);
@@ -61,8 +62,12 @@ export default function PageCards() {
     <div className="pageCards">
       <HeaderPage />
       <div className="box-cards">
-        {conter === 8 ? (
-          <PageFinished boolean={booleanAnswer} />
+        {conter > 8 ? (
+          <PageFinished
+            boolean={booleanAnswer}
+            meta={meta}
+            textButton={textButton}
+          />
         ) : card === "front" ? (
           <FrontCard
             setCard={turnCardBehind}
@@ -76,6 +81,8 @@ export default function PageCards() {
             myCard={objectCards[conter - 1]}
             boolean={booleanAnswer}
             setBoolean={setBooleanAnswer}
+            textButton={textButton}
+            setTextButton={setTextButton}
           />
         )}
       </div>

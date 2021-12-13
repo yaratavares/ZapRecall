@@ -16,6 +16,23 @@
   margin-top: 260px;
 }
 
+.practice input {
+  width: 345px;
+  height: 49px;
+  margin-bottom: 35px;
+
+  border: 1px solid #000000;
+  border-radius: 12px;
+
+  padding: 15px;
+}
+
+.practice input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+
 .practice button {
   cursor: pointer;
 
@@ -34,6 +51,7 @@
 .practice button:hover {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
 }
+
 .practice p {
   margin-right: 7px;
   font-weight: 700;
