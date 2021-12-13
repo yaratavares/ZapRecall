@@ -2,7 +2,6 @@ import ConterCards from "./ConterCards";
 import TurnCard from "./TurnCard";
 
 export default function FrontCard({ setCard, conter, myCard }) {
-  console.log(myCard);
   return (
     <div className="card">
       <ConterCards conter={conter} />

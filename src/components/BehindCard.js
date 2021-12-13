@@ -2,19 +2,27 @@ import { useState } from "react";
 import ConterCards from "./ConterCards";
 import TurnCard from "./TurnCard";
 
-export default function BehindCard({ setCard, conter, myCard }) {
+export default function BehindCard({
+  setCard,
+  conter,
+  myCard,
+  boolean,
+  setBoolean,
+}) {
   const buttonsClass = [
-    { class: "black", text: "Aprendi agora" },
-    { class: "red", text: "Não lembrei" },
-    { class: "green", text: "Lembrei com esforço" },
-    { class: "yellow", text: "Zap!" },
+    { class: "black", text: "Aprendi agora", boolean: false },
+    { class: "red", text: "Não lembrei", boolean: false },
+    { class: "green", text: "Lembrei com esforço", boolean: true },
+    { class: "yellow", text: "Zap!", boolean: true },
   ];
 
   const [classButton, setClassButton] = useState("");
 
   const [cardState, setCardState] = useState(1);
 
-  function borderColor(classButton) {
+  function borderColor(classButton, booleanButton) {
+    setBoolean(boolean, booleanButton);
+    boolean.push(booleanButton);
     setClassButton(classButton);
     setCardState("result");
   }
@@ -32,7 +40,7 @@ export default function BehindCard({ setCard, conter, myCard }) {
         <div className="buttonAnswer">
           {buttonsClass.map((button) => (
             <button
-              onClick={() => borderColor(button.class)}
+              onClick={() => borderColor(button.class, button.boolean)}
               className={button.class}
             >
               {button.text}

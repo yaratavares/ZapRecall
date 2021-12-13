@@ -44,6 +44,7 @@ export default function PageCards() {
 
   const [conter, setConter] = useState(1);
   const [card, setCard] = useState("front");
+  const [booleanAnswer, setBooleanAnswer] = useState([]);
 
   function turnCardFront() {
     setConter(conter + 1);
@@ -59,7 +60,7 @@ export default function PageCards() {
       <HeaderPage />
       <div className="box-cards">
         {conter === 8 ? (
-          <PageFinished />
+          <PageFinished boolean={booleanAnswer} />
         ) : card === "front" ? (
           <FrontCard
             setCard={turnCardBehind}
@@ -71,6 +72,8 @@ export default function PageCards() {
             setCard={turnCardFront}
             conter={conter}
             myCard={objectCards[conter - 1]}
+            boolean={booleanAnswer}
+            setBoolean={setBooleanAnswer}
           />
         )}
       </div>
