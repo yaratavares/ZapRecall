@@ -1,23 +1,8 @@
 import ReactDOM from "react-dom";
-import { useState } from "react";
-
-import PageInit from "./components/PageInit";
-import PageCards from "./components/PageCards";
-import "./css/reset.css";
-import "./css/style.css";
+import ZapRecall from "./components/ZapRecall";
 
 function App() {
-  const [pagina, setPagina] = useState("init");
-
-  return (
-    <div className="box-content">
-      {pagina === "init" ? (
-        <PageInit setPagina={setPagina} />
-      ) : (
-        <PageCards></PageCards>
-      )}
-    </div>
-  );
+  return <ZapRecall />;
 }
 
 ReactDOM.render(<App />, document.querySelector(".root"));

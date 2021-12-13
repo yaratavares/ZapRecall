@@ -1,5 +1,7 @@
-import ConterCards from "./ConterCards";
-import TurnCard from "./TurnCard";
+import ConterCards from "../ConterCards";
+import TurnCard from "../TurnCard";
+
+import "./style.css";
 
 export default function FrontCard({ setCard, conter, myCard }) {
   return (

@@ -1,9 +1,11 @@
 import { useState } from "react";
 
-import HeaderPage from "./HeaderPage";
-import FrontCard from "./FrontCard";
-import BehindCard from "./BehindCard";
-import PageFinished from "./PageFinished";
+import HeaderPage from "../HeaderPage";
+import FrontCard from "../FrontCard";
+import BehindCard from "../BehindCard";
+import PageFinished from "../PageFinished";
+
+import "./style.css";
 
 export default function PageCards() {
   const objectCards = [

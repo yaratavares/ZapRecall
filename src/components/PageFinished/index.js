@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function PageFinished({ boolean }) {
   if (boolean.includes(false)) {
     return <PageFailure />;
@@ -35,8 +37,9 @@ function PageFailure() {
       </div>
       <div className="text">
         <p>
-          Você esqueceu alguns flashcards..Não desanime! Na próxima você
-          consegue!
+          Você esqueceu alguns flashcards..
+          <br />
+          Não desanime! Na próxima você consegue!
         </p>
       </div>
       <div className="practice">

@@ -1,9 +1,5 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 /* pagina inicial */
-.pageInit {
+/* .pageInit {
   min-height: 100vh;
 
   display: flex;
@@ -43,10 +39,10 @@ body {
   margin-right: 7px;
   font-weight: 700;
   font-size: 20px;
-}
+} */
 
 /* pagina de cards */
-.pageCards {
+/* .pageCards {
   min-height: 100vh;
 }
 
@@ -105,10 +101,10 @@ body {
 
 .card .turnCard:hover {
   cursor: pointer;
-}
+} */
 
 /* respostas */
-.questionMini {
+/* .questionMini {
   position: absolute;
   top: 19px;
   left: 49px;
@@ -176,10 +172,10 @@ body {
 .card.yellow {
   border: 3px solid #ffef61;
   box-shadow: 0px 8px 24px rgba(255, 239, 97, 0.12);
-}
+} */
 
 /* pagina final */
-.finished {
+/* .finished {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,9 +205,4 @@ body {
 
 .finished .practice {
   margin-top: 16px;
-}
-
-/* classes para desenvolvimento */
-.hidden {
-  display: none;
-}
+} */

@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function PageInit({ setPagina }) {
   return (
     <div className="pageInit">

@@ -1,0 +1,34 @@
+.finished {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.finished .title {
+  display: flex;
+
+  justify-content: center;
+}
+
+.finished .title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-right: 12px;
+}
+
+.finished .text {
+  margin-top: 16px;
+  text-align: center;
+
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.finished .practice {
+  display: flex;
+  justify-content: center;
+}
+
+.finished .practice {
+  margin-top: 16px;
+}

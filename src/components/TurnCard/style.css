@@ -1,0 +1,8 @@
+.card .turnCard {
+  padding: 0 17px 18px 0;
+  align-self: flex-end;
+}
+
+.card .turnCard:hover {
+  cursor: pointer;
+}
